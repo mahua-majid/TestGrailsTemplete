@@ -81,7 +81,6 @@
 		</style>
 	</head>
 	<body>
-	
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
@@ -119,7 +118,5 @@
 				</ul>
 			</div>
 		</div>
-		
-		
 	</body>
 </html>
