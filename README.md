@@ -1,0 +1,2 @@
+# TestGrailsTemplete
+Templete for Grails
