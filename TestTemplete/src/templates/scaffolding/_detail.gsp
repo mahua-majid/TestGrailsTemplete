@@ -61,7 +61,7 @@ for (p in props) {
                         Collections.sort(props, comparator.constructors[0].newInstance([domainClass1] as Object[]))
                         for (q in props) {
                             if (!(q.manyToOne || q.oneToOne)) {
-                                renderFieldForProperty(q, domainClass1,"${p.referencedDomainClass?.propertyName}\${j + 1}")
+                                renderFieldForProperty(q, domainClass1, "${p.referencedDomainClass?.propertyName}\${j + 1}")
 
                             }
                         }
@@ -140,13 +140,13 @@ for (p in props) {
             required = (cp ? !(cp.propertyType in [boolean, Boolean]) && !cp.nullable : false)
 
         }
-//        p.name = prefix + p.name
+        prefix = ' name="' + prefix
 
 %>
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <div class="form-group">
         <label>${p.naturalName}</label>
-        ${renderEditor(p)}
+        ${renderEditor(p).replace(' name="', prefix)}
     </div>
 </div>
 <%
